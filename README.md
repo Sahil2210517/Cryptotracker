@@ -1,12 +1,12 @@
 # Crypto Tracker
 
-Crypto Tracker is a responsive web application built with React and Redux Toolkit that simulates real-time cryptocurrency market data. Inspired by platforms like CoinMarketCap, this project demonstrates dynamic UI updates and centralized state management without using any external APIs.
+Crypto Tracker is a responsive web application built with React and Redux Toolkit that simulates real-time cryptocurrency market data. Inspired by platforms like CoinMarketCap, this project demonstrates dynamic UI updates and centralized state management using the CoinGecko API.
 
 ---
 
 ## Features
 
-- Real-time price simulation using `setInterval`
+- Real-time price updates using CoinGecko API
 - Dynamic table for top cryptocurrencies (BTC, ETH, USDT, etc.)
 - Color-coded percentage changes (green for gains, red for losses)
 - 7-day price trend charts (static SVG/images)
@@ -18,9 +18,9 @@ Crypto Tracker is a responsive web application built with React and Redux Toolki
 
 ## Implementation Overview
 
-- Simulates WebSocket-like real-time updates
+- Fetches live cryptocurrency data from the CoinGecko API
 - Updates price, 1h %, 24h %, 7d %, and volume data
-- All updates flow through Redux actions
+- All data flows through Redux actions
 - No local component state used
 
 ---
@@ -33,6 +33,7 @@ Crypto Tracker is a responsive web application built with React and Redux Toolki
 - TypeScript
 - Vite
 - Tailwind CSS / CSS Modules
+- CoinGecko API
 
 ---
 
@@ -41,3 +42,5 @@ Crypto Tracker is a responsive web application built with React and Redux Toolki
 ```bash
 npm install
 npm run dev
+
+
